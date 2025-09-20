@@ -21,7 +21,7 @@ class BoardArray : public Board {
 
             if (index == SIZE && pos == SIZE) {
                 cout << entry->name << "'s score is too low to be added!" << endl;
-                return;
+                
             }
 
             if (index < SIZE) {

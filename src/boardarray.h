@@ -20,7 +20,11 @@ class BoardArray : public Board {
             }
 
             if (index == SIZE && pos == SIZE) {
-                cout << entry->name << "'s score is too low to be added!" << endl;
+                static string lastRej = " ";
+                if (entry->name != lastRej){
+                    cout << entry->name << "'s score is too low to be added!" << endl;
+                    lastRej = entry->name;
+                }
                 return;
             }
 
